@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<launch>
+    <!-- Type of neural network (resnet, mobile or linnet)-->
+    <arg name="net_type" default="resnet" />
+
+    <!-- Camera position (top or botton)-->
+    <arg name="camera_pos" default="top" />
+
+    <!-- Neural network model filename (inside of cnn_line/src/net_weights)-->
+    <arg name="net_name" default="resnet_top_256_sim.hdf5" />
+
+    <!-- Number of classes for classification (top=3 / bot=4)-->
+    <!-- If your model has more or less classes adjust accordingly (not tested)-->
+    <arg name="num_classes" default="3" />
+
+    <!-- Size of input images (tested with 128 / 256 / 512)-->
+    <arg name="image_size" default="256" />
+
+    <!-- Frequency of publishing results (hardware may impact reachable speed)-->
+    <arg name="publish_frequency" default="10" />
+
+    <!-- Input image topic (Only supports compressed for now)-->
+    <arg name="input_topic" default="/nav_front/image_raw/compressed" />
+
+    <!-- Autonomous mode flag (Starts off by default)-->
+    <!-- To toggle press start + select on xbox360 controller-->
+    <!-- or button 6 an 7 of a generic controler)-->
+    <arg name="autonomous_mode" default="False"/>
+
+    <!-- Set Parameters -->
+    <param name="autonomous_mode" value="$(arg autonomous_mode)" />
+
+
+    <!-- Start the line_detection node-->
+    <!-- preprocess flag enables preprocessing and debug_mode enables cv2.imshow -->
+    <node name="line_detection" pkg="cnn_line" type="line_detection.py" output="screen" args="
+        --preprocess
+        --net_type $(arg net_type)
+        --camera_pos $(arg camera_pos)
+        --net_name $(arg net_name)
+        --num_classes $(arg num_classes)
+        --image_size $(arg image_size)
+        --publish_frequency $(arg publish_frequency)
+        --input_topic $(arg input_topic)
+        --debug_mode"
+    />
+
+</launch>

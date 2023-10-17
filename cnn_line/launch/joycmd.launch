@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<launch>
+
+  <!--node pkg="deep_soybot" name="control_B0" type="control_B1.py"/-->
+
+  <!-- joy node -->
+	<node respawn="true"
+		pkg="joy"
+		type="joy_node" 
+		name="robot_joy" >
+			
+		<param name="dev" type="string" value="/dev/input/js2" />
+		<param name="deadzone" value="0.05" />
+		<param name="autorepeat_rate" type="double" value="0" />
+
+		<remap from="joy" to="/joy"/>
+  	</node>
+
+    <!--node pkg="deep_soybot" name="joystick_node" type="joy_op.py"/-->
+
+	<!--node pkg="deep_soybot" name="control_node" type="control_C2.py"/-->
+
+	<!--include file="$(find realsense2_camera)/launch/rs_camera.launch">
+		<arg name="align_depth" value="true" />
+		<arg name="color_width" value="640" />
+		<arg name="color_height" value="480" />
+		<arg name="color_fps" value="20" />
+		<arg name="depth_width" value="640" />
+		<arg name="depth_height" value="480" />
+		<arg name="depth_fps" value="20" />
+	</include-->
+  
+</launch>

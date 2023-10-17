@@ -1,0 +1,1206 @@
+<?xml version='1.0' ?>
+<sdf version='1.6'>
+    <model name='simple_slope'>
+    <static>true</static>
+    <link name="linkS34">
+      <pose> 8.0 -1.25 -0.005 0.0 0.0 0.0 </pose>
+      <static>true</static>
+        <visual name="slope34">
+        <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh><uri>model://simple_slope/meshes/slope.obj</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+    <link name="linkS134">
+      <pose> 8.0 -1.25 -0.005 0.0 0.0 3.1416 </pose>
+      <static>true</static>
+        <visual name="slope134">
+        <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh><uri>model://simple_slope/meshes/slope.obj</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+    <link name="linkS234">
+      <pose> 2.0 -1.25 -0.005 0.0 0.0 0.0 </pose>
+      <static>true</static>
+        <visual name="slope234">
+        <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh><uri>model://simple_slope/meshes/slope.obj</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+    <link name="linkS334">
+      <pose> 2.0 -1.25 -0.005 0.0 0.0 3.1416 </pose>
+      <static>true</static>
+        <visual name="slope334">
+        <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh><uri>model://simple_slope/meshes/slope.obj</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+    <link name="linkS434">
+      <pose> 8.0 -4.25 -0.005 0.0 0.0 0.0 </pose>
+      <static>true</static>
+        <visual name="slope434">
+        <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh><uri>model://simple_slope/meshes/slope.obj</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+    <link name="linkS534">
+      <pose> 8.0 -4.25 -0.005 0.0 0.0 3.1416 </pose>
+      <static>true</static>
+        <visual name="slope534">
+        <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh><uri>model://simple_slope/meshes/slope.obj</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+    <link name="linkS634">
+      <pose> 2.0 -4.25 -0.005 0.0 0.0 0.0 </pose>
+      <static>true</static>
+        <visual name="slope634">
+        <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh><uri>model://simple_slope/meshes/slope.obj</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+    <link name="linkS734">
+      <pose> 2.0 -4.25 -0.005 0.0 0.0 3.1416 </pose>
+      <static>true</static>
+        <visual name="slope734">
+        <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh><uri>model://simple_slope/meshes/slope.obj</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+    <link name="linkS834">
+      <pose> 8.0 -7.25 -0.005 0.0 0.0 0.0 </pose>
+      <static>true</static>
+        <visual name="slope834">
+        <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh><uri>model://simple_slope/meshes/slope.obj</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+    <link name="linkS934">
+      <pose> 8.0 -7.25 -0.005 0.0 0.0 3.1416 </pose>
+      <static>true</static>
+        <visual name="slope934">
+        <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh><uri>model://simple_slope/meshes/slope.obj</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+    <link name="linkS1034">
+      <pose> 2.0 -7.25 -0.005 0.0 0.0 0.0 </pose>
+      <static>true</static>
+        <visual name="slope1034">
+        <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh><uri>model://simple_slope/meshes/slope.obj</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+    <link name="linkS1134">
+      <pose> 2.0 -7.25 -0.005 0.0 0.0 3.1416 </pose>
+      <static>true</static>
+        <visual name="slope1134">
+        <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh><uri>model://simple_slope/meshes/slope.obj</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+    <link name="linkS1234">
+      <pose> 8.0 -10.2 -0.005 0.0 0.0 0.0 </pose>
+      <static>true</static>
+        <visual name="slope1234">
+        <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh><uri>model://simple_slope/meshes/slope.obj</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+    <link name="linkS1334">
+      <pose> 8.0 -10.2 -0.005 0.0 0.0 3.1416 </pose>
+      <static>true</static>
+        <visual name="slope1334">
+        <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh><uri>model://simple_slope/meshes/slope.obj</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+    <link name="linkS1434">
+      <pose> 2.0 -10.2 -0.005 0.0 0.0 0.0 </pose>
+      <static>true</static>
+        <visual name="slope1434">
+        <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh><uri>model://simple_slope/meshes/slope.obj</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+    <link name="linkS1534">
+      <pose> 2.0 -10.2 -0.005 0.0 0.0 3.1416 </pose>
+      <static>true</static>
+        <visual name="slope1534">
+        <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh><uri>model://simple_slope/meshes/slope.obj</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+    <link name="linkS1634">
+      <pose> 8.0 -13.2 -0.005 0.0 0.0 0.0 </pose>
+      <static>true</static>
+        <visual name="slope1634">
+        <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh><uri>model://simple_slope/meshes/slope.obj</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+    <link name="linkS1734">
+      <pose> 8.0 -13.2 -0.005 0.0 0.0 3.1416 </pose>
+      <static>true</static>
+        <visual name="slope1734">
+        <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh><uri>model://simple_slope/meshes/slope.obj</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+    <link name="linkS1834">
+      <pose> 2.0 -13.2 -0.005 0.0 0.0 0.0 </pose>
+      <static>true</static>
+        <visual name="slope1834">
+        <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh><uri>model://simple_slope/meshes/slope.obj</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+    <link name="linkS1934">
+      <pose> 2.0 -13.2 -0.005 0.0 0.0 3.1416 </pose>
+      <static>true</static>
+        <visual name="slope1934">
+        <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh><uri>model://simple_slope/meshes/slope.obj</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+    <link name="linkS68">
+      <pose> 8.0 -0.75 -0.005 0.0 0.0 0.0 </pose>
+      <static>true</static>
+        <visual name="slope68">
+        <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh><uri>model://simple_slope/meshes/slope.obj</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+    <link name="linkS168">
+      <pose> 8.0 -0.75 -0.005 0.0 0.0 3.1416 </pose>
+      <static>true</static>
+        <visual name="slope168">
+        <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh><uri>model://simple_slope/meshes/slope.obj</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+    <link name="linkS268">
+      <pose> 2.0 -0.75 -0.005 0.0 0.0 0.0 </pose>
+      <static>true</static>
+        <visual name="slope268">
+        <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh><uri>model://simple_slope/meshes/slope.obj</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+    <link name="linkS368">
+      <pose> 2.0 -0.75 -0.005 0.0 0.0 3.1416 </pose>
+      <static>true</static>
+        <visual name="slope368">
+        <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh><uri>model://simple_slope/meshes/slope.obj</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+    <link name="linkS468">
+      <pose> 8.0 -3.75 -0.005 0.0 0.0 0.0 </pose>
+      <static>true</static>
+        <visual name="slope468">
+        <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh><uri>model://simple_slope/meshes/slope.obj</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+    <link name="linkS568">
+      <pose> 8.0 -3.75 -0.005 0.0 0.0 3.1416 </pose>
+      <static>true</static>
+        <visual name="slope568">
+        <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh><uri>model://simple_slope/meshes/slope.obj</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+    <link name="linkS668">
+      <pose> 2.0 -3.75 -0.005 0.0 0.0 0.0 </pose>
+      <static>true</static>
+        <visual name="slope668">
+        <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh><uri>model://simple_slope/meshes/slope.obj</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+    <link name="linkS768">
+      <pose> 2.0 -3.75 -0.005 0.0 0.0 3.1416 </pose>
+      <static>true</static>
+        <visual name="slope768">
+        <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh><uri>model://simple_slope/meshes/slope.obj</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+    <link name="linkS868">
+      <pose> 8.0 -6.75 -0.005 0.0 0.0 0.0 </pose>
+      <static>true</static>
+        <visual name="slope868">
+        <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh><uri>model://simple_slope/meshes/slope.obj</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+    <link name="linkS968">
+      <pose> 8.0 -6.75 -0.005 0.0 0.0 3.1416 </pose>
+      <static>true</static>
+        <visual name="slope968">
+        <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh><uri>model://simple_slope/meshes/slope.obj</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+    <link name="linkS1068">
+      <pose> 2.0 -6.75 -0.005 0.0 0.0 0.0 </pose>
+      <static>true</static>
+        <visual name="slope1068">
+        <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh><uri>model://simple_slope/meshes/slope.obj</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+    <link name="linkS1168">
+      <pose> 2.0 -6.75 -0.005 0.0 0.0 3.1416 </pose>
+      <static>true</static>
+        <visual name="slope1168">
+        <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh><uri>model://simple_slope/meshes/slope.obj</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+    <link name="linkS1268">
+      <pose> 8.0 -9.75 -0.005 0.0 0.0 0.0 </pose>
+      <static>true</static>
+        <visual name="slope1268">
+        <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh><uri>model://simple_slope/meshes/slope.obj</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+    <link name="linkS1368">
+      <pose> 8.0 -9.75 -0.005 0.0 0.0 3.1416 </pose>
+      <static>true</static>
+        <visual name="slope1368">
+        <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh><uri>model://simple_slope/meshes/slope.obj</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+    <link name="linkS1468">
+      <pose> 2.0 -9.75 -0.005 0.0 0.0 0.0 </pose>
+      <static>true</static>
+        <visual name="slope1468">
+        <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh><uri>model://simple_slope/meshes/slope.obj</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+    <link name="linkS1568">
+      <pose> 2.0 -9.75 -0.005 0.0 0.0 3.1416 </pose>
+      <static>true</static>
+        <visual name="slope1568">
+        <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh><uri>model://simple_slope/meshes/slope.obj</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+    <link name="linkS1668">
+      <pose> 8.0 -12.8 -0.005 0.0 0.0 0.0 </pose>
+      <static>true</static>
+        <visual name="slope1668">
+        <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh><uri>model://simple_slope/meshes/slope.obj</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+    <link name="linkS1768">
+      <pose> 8.0 -12.8 -0.005 0.0 0.0 3.1416 </pose>
+      <static>true</static>
+        <visual name="slope1768">
+        <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh><uri>model://simple_slope/meshes/slope.obj</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+    <link name="linkS1868">
+      <pose> 2.0 -12.8 -0.005 0.0 0.0 0.0 </pose>
+      <static>true</static>
+        <visual name="slope1868">
+        <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh><uri>model://simple_slope/meshes/slope.obj</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+    <link name="linkS1968">
+      <pose> 2.0 -12.8 -0.005 0.0 0.0 3.1416 </pose>
+      <static>true</static>
+        <visual name="slope1968">
+        <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh><uri>model://simple_slope/meshes/slope.obj</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+    <link name="linkS102">
+      <pose> 8.0 -0.25 -0.005 0.0 0.0 0.0 </pose>
+      <static>true</static>
+        <visual name="slope102">
+        <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh><uri>model://simple_slope/meshes/slope.obj</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+    <link name="linkS202">
+      <pose> 8.0 -0.25 -0.005 0.0 0.0 3.1416 </pose>
+      <static>true</static>
+        <visual name="slope202">
+        <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh><uri>model://simple_slope/meshes/slope.obj</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+    <link name="linkS302">
+      <pose> 2.0 -0.25 -0.005 0.0 0.0 0.0 </pose>
+      <static>true</static>
+        <visual name="slope302">
+        <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh><uri>model://simple_slope/meshes/slope.obj</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+    <link name="linkS402">
+      <pose> 2.0 -0.25 -0.005 0.0 0.0 3.1416 </pose>
+      <static>true</static>
+        <visual name="slope402">
+        <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh><uri>model://simple_slope/meshes/slope.obj</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+    <link name="linkS502">
+      <pose> 8.0 -3.25 -0.005 0.0 0.0 0.0 </pose>
+      <static>true</static>
+        <visual name="slope502">
+        <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh><uri>model://simple_slope/meshes/slope.obj</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+    <link name="linkS602">
+      <pose> 8.0 -3.25 -0.005 0.0 0.0 3.1416 </pose>
+      <static>true</static>
+        <visual name="slope602">
+        <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh><uri>model://simple_slope/meshes/slope.obj</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+    <link name="linkS702">
+      <pose> 2.0 -3.25 -0.005 0.0 0.0 0.0 </pose>
+      <static>true</static>
+        <visual name="slope702">
+        <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh><uri>model://simple_slope/meshes/slope.obj</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+    <link name="linkS802">
+      <pose> 2.0 -3.25 -0.005 0.0 0.0 3.1416 </pose>
+      <static>true</static>
+        <visual name="slope802">
+        <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh><uri>model://simple_slope/meshes/slope.obj</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+    <link name="linkS902">
+      <pose> 8.0 -6.25 -0.005 0.0 0.0 0.0 </pose>
+      <static>true</static>
+        <visual name="slope902">
+        <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh><uri>model://simple_slope/meshes/slope.obj</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+    <link name="linkS1002">
+      <pose> 8.0 -6.25 -0.005 0.0 0.0 3.1416 </pose>
+      <static>true</static>
+        <visual name="slope1002">
+        <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh><uri>model://simple_slope/meshes/slope.obj</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+    <link name="linkS1102">
+      <pose> 2.0 -6.25 -0.005 0.0 0.0 0.0 </pose>
+      <static>true</static>
+        <visual name="slope1102">
+        <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh><uri>model://simple_slope/meshes/slope.obj</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+    <link name="linkS1202">
+      <pose> 2.0 -6.25 -0.005 0.0 0.0 3.1416 </pose>
+      <static>true</static>
+        <visual name="slope1202">
+        <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh><uri>model://simple_slope/meshes/slope.obj</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+    <link name="linkS1302">
+      <pose> 8.0 -9.25 -0.005 0.0 0.0 0.0 </pose>
+      <static>true</static>
+        <visual name="slope1302">
+        <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh><uri>model://simple_slope/meshes/slope.obj</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+    <link name="linkS1402">
+      <pose> 8.0 -9.25 -0.005 0.0 0.0 3.1416 </pose>
+      <static>true</static>
+        <visual name="slope1402">
+        <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh><uri>model://simple_slope/meshes/slope.obj</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+    <link name="linkS1502">
+      <pose> 2.0 -9.25 -0.005 0.0 0.0 0.0 </pose>
+      <static>true</static>
+        <visual name="slope1502">
+        <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh><uri>model://simple_slope/meshes/slope.obj</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+    <link name="linkS1602">
+      <pose> 2.0 -9.25 -0.005 0.0 0.0 3.1416 </pose>
+      <static>true</static>
+        <visual name="slope1602">
+        <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh><uri>model://simple_slope/meshes/slope.obj</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+    <link name="linkS1702">
+      <pose> 8.0 -12.2 -0.005 0.0 0.0 0.0 </pose>
+      <static>true</static>
+        <visual name="slope1702">
+        <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh><uri>model://simple_slope/meshes/slope.obj</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+    <link name="linkS1802">
+      <pose> 8.0 -12.2 -0.005 0.0 0.0 3.1416 </pose>
+      <static>true</static>
+        <visual name="slope1802">
+        <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh><uri>model://simple_slope/meshes/slope.obj</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+    <link name="linkS1902">
+      <pose> 2.0 -12.2 -0.005 0.0 0.0 0.0 </pose>
+      <static>true</static>
+        <visual name="slope1902">
+        <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh><uri>model://simple_slope/meshes/slope.obj</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+    <link name="linkS2002">
+      <pose> 2.0 -12.2 -0.005 0.0 0.0 3.1416 </pose>
+      <static>true</static>
+        <visual name="slope2002">
+        <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh><uri>model://simple_slope/meshes/slope.obj</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+    <link name="linkS136">
+      <pose> 8.0 0.25 -0.005 0.0 0.0 0.0 </pose>
+      <static>true</static>
+        <visual name="slope136">
+        <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh><uri>model://simple_slope/meshes/slope.obj</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+    <link name="linkS236">
+      <pose> 8.0 0.25 -0.005 0.0 0.0 3.1416 </pose>
+      <static>true</static>
+        <visual name="slope236">
+        <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh><uri>model://simple_slope/meshes/slope.obj</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+    <link name="linkS336">
+      <pose> 2.0 0.25 -0.005 0.0 0.0 0.0 </pose>
+      <static>true</static>
+        <visual name="slope336">
+        <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh><uri>model://simple_slope/meshes/slope.obj</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+    <link name="linkS436">
+      <pose> 2.0 0.25 -0.005 0.0 0.0 3.1416 </pose>
+      <static>true</static>
+        <visual name="slope436">
+        <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh><uri>model://simple_slope/meshes/slope.obj</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+    <link name="linkS536">
+      <pose> 8.0 -2.75 -0.005 0.0 0.0 0.0 </pose>
+      <static>true</static>
+        <visual name="slope536">
+        <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh><uri>model://simple_slope/meshes/slope.obj</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+    <link name="linkS636">
+      <pose> 8.0 -2.75 -0.005 0.0 0.0 3.1416 </pose>
+      <static>true</static>
+        <visual name="slope636">
+        <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh><uri>model://simple_slope/meshes/slope.obj</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+    <link name="linkS736">
+      <pose> 2.0 -2.75 -0.005 0.0 0.0 0.0 </pose>
+      <static>true</static>
+        <visual name="slope736">
+        <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh><uri>model://simple_slope/meshes/slope.obj</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+    <link name="linkS836">
+      <pose> 2.0 -2.75 -0.005 0.0 0.0 3.1416 </pose>
+      <static>true</static>
+        <visual name="slope836">
+        <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh><uri>model://simple_slope/meshes/slope.obj</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+    <link name="linkS936">
+      <pose> 8.0 -5.75 -0.005 0.0 0.0 0.0 </pose>
+      <static>true</static>
+        <visual name="slope936">
+        <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh><uri>model://simple_slope/meshes/slope.obj</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+    <link name="linkS1036">
+      <pose> 8.0 -5.75 -0.005 0.0 0.0 3.1416 </pose>
+      <static>true</static>
+        <visual name="slope1036">
+        <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh><uri>model://simple_slope/meshes/slope.obj</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+    <link name="linkS1136">
+      <pose> 2.0 -5.75 -0.005 0.0 0.0 0.0 </pose>
+      <static>true</static>
+        <visual name="slope1136">
+        <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh><uri>model://simple_slope/meshes/slope.obj</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+    <link name="linkS1236">
+      <pose> 2.0 -5.75 -0.005 0.0 0.0 3.1416 </pose>
+      <static>true</static>
+        <visual name="slope1236">
+        <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh><uri>model://simple_slope/meshes/slope.obj</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+    <link name="linkS1336">
+      <pose> 8.0 -8.75 -0.005 0.0 0.0 0.0 </pose>
+      <static>true</static>
+        <visual name="slope1336">
+        <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh><uri>model://simple_slope/meshes/slope.obj</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+    <link name="linkS1436">
+      <pose> 8.0 -8.75 -0.005 0.0 0.0 3.1416 </pose>
+      <static>true</static>
+        <visual name="slope1436">
+        <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh><uri>model://simple_slope/meshes/slope.obj</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+    <link name="linkS1536">
+      <pose> 2.0 -8.75 -0.005 0.0 0.0 0.0 </pose>
+      <static>true</static>
+        <visual name="slope1536">
+        <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh><uri>model://simple_slope/meshes/slope.obj</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+    <link name="linkS1636">
+      <pose> 2.0 -8.75 -0.005 0.0 0.0 3.1416 </pose>
+      <static>true</static>
+        <visual name="slope1636">
+        <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh><uri>model://simple_slope/meshes/slope.obj</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+    <link name="linkS1736">
+      <pose> 8.0 -11.8 -0.005 0.0 0.0 0.0 </pose>
+      <static>true</static>
+        <visual name="slope1736">
+        <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh><uri>model://simple_slope/meshes/slope.obj</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+    <link name="linkS1836">
+      <pose> 8.0 -11.8 -0.005 0.0 0.0 3.1416 </pose>
+      <static>true</static>
+        <visual name="slope1836">
+        <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh><uri>model://simple_slope/meshes/slope.obj</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+    <link name="linkS1936">
+      <pose> 2.0 -11.8 -0.005 0.0 0.0 0.0 </pose>
+      <static>true</static>
+        <visual name="slope1936">
+        <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh><uri>model://simple_slope/meshes/slope.obj</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+    <link name="linkS2036">
+      <pose> 2.0 -11.8 -0.005 0.0 0.0 3.1416 </pose>
+      <static>true</static>
+        <visual name="slope2036">
+        <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh><uri>model://simple_slope/meshes/slope.obj</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+    <link name="linkS170">
+      <pose> 8.0 0.75 -0.005 0.0 0.0 0.0 </pose>
+      <static>true</static>
+        <visual name="slope170">
+        <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh><uri>model://simple_slope/meshes/slope.obj</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+    <link name="linkS270">
+      <pose> 8.0 0.75 -0.005 0.0 0.0 3.1416 </pose>
+      <static>true</static>
+        <visual name="slope270">
+        <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh><uri>model://simple_slope/meshes/slope.obj</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+    <link name="linkS370">
+      <pose> 2.0 0.75 -0.005 0.0 0.0 0.0 </pose>
+      <static>true</static>
+        <visual name="slope370">
+        <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh><uri>model://simple_slope/meshes/slope.obj</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+    <link name="linkS470">
+      <pose> 2.0 0.75 -0.005 0.0 0.0 3.1416 </pose>
+      <static>true</static>
+        <visual name="slope470">
+        <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh><uri>model://simple_slope/meshes/slope.obj</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+    <link name="linkS570">
+      <pose> 8.0 -2.25 -0.005 0.0 0.0 0.0 </pose>
+      <static>true</static>
+        <visual name="slope570">
+        <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh><uri>model://simple_slope/meshes/slope.obj</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+    <link name="linkS670">
+      <pose> 8.0 -2.25 -0.005 0.0 0.0 3.1416 </pose>
+      <static>true</static>
+        <visual name="slope670">
+        <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh><uri>model://simple_slope/meshes/slope.obj</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+    <link name="linkS770">
+      <pose> 2.0 -2.25 -0.005 0.0 0.0 0.0 </pose>
+      <static>true</static>
+        <visual name="slope770">
+        <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh><uri>model://simple_slope/meshes/slope.obj</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+    <link name="linkS870">
+      <pose> 2.0 -2.25 -0.005 0.0 0.0 3.1416 </pose>
+      <static>true</static>
+        <visual name="slope870">
+        <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh><uri>model://simple_slope/meshes/slope.obj</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+    <link name="linkS970">
+      <pose> 8.0 -5.25 -0.005 0.0 0.0 0.0 </pose>
+      <static>true</static>
+        <visual name="slope970">
+        <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh><uri>model://simple_slope/meshes/slope.obj</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+    <link name="linkS1070">
+      <pose> 8.0 -5.25 -0.005 0.0 0.0 3.1416 </pose>
+      <static>true</static>
+        <visual name="slope1070">
+        <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh><uri>model://simple_slope/meshes/slope.obj</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+    <link name="linkS1170">
+      <pose> 2.0 -5.25 -0.005 0.0 0.0 0.0 </pose>
+      <static>true</static>
+        <visual name="slope1170">
+        <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh><uri>model://simple_slope/meshes/slope.obj</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+    <link name="linkS1270">
+      <pose> 2.0 -5.25 -0.005 0.0 0.0 3.1416 </pose>
+      <static>true</static>
+        <visual name="slope1270">
+        <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh><uri>model://simple_slope/meshes/slope.obj</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+    <link name="linkS1370">
+      <pose> 8.0 -8.25 -0.005 0.0 0.0 0.0 </pose>
+      <static>true</static>
+        <visual name="slope1370">
+        <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh><uri>model://simple_slope/meshes/slope.obj</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+    <link name="linkS1470">
+      <pose> 8.0 -8.25 -0.005 0.0 0.0 3.1416 </pose>
+      <static>true</static>
+        <visual name="slope1470">
+        <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh><uri>model://simple_slope/meshes/slope.obj</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+    <link name="linkS1570">
+      <pose> 2.0 -8.25 -0.005 0.0 0.0 0.0 </pose>
+      <static>true</static>
+        <visual name="slope1570">
+        <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh><uri>model://simple_slope/meshes/slope.obj</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+    <link name="linkS1670">
+      <pose> 2.0 -8.25 -0.005 0.0 0.0 3.1416 </pose>
+      <static>true</static>
+        <visual name="slope1670">
+        <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh><uri>model://simple_slope/meshes/slope.obj</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+    <link name="linkS1770">
+      <pose> 8.0 -11.2 -0.005 0.0 0.0 0.0 </pose>
+      <static>true</static>
+        <visual name="slope1770">
+        <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh><uri>model://simple_slope/meshes/slope.obj</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+    <link name="linkS1870">
+      <pose> 8.0 -11.2 -0.005 0.0 0.0 3.1416 </pose>
+      <static>true</static>
+        <visual name="slope1870">
+        <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh><uri>model://simple_slope/meshes/slope.obj</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+    <link name="linkS1970">
+      <pose> 2.0 -11.2 -0.005 0.0 0.0 0.0 </pose>
+      <static>true</static>
+        <visual name="slope1970">
+        <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh><uri>model://simple_slope/meshes/slope.obj</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+    <link name="linkS2070">
+      <pose> 2.0 -11.2 -0.005 0.0 0.0 3.1416 </pose>
+      <static>true</static>
+        <visual name="slope2070">
+        <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh><uri>model://simple_slope/meshes/slope.obj</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+    <link name="linkS204">
+      <pose> 8.0 1.25 -0.005 0.0 0.0 0.0 </pose>
+      <static>true</static>
+        <visual name="slope204">
+        <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh><uri>model://simple_slope/meshes/slope.obj</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+    <link name="linkS304">
+      <pose> 8.0 1.25 -0.005 0.0 0.0 3.1416 </pose>
+      <static>true</static>
+        <visual name="slope304">
+        <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh><uri>model://simple_slope/meshes/slope.obj</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+    <link name="linkS404">
+      <pose> 2.0 1.25 -0.005 0.0 0.0 0.0 </pose>
+      <static>true</static>
+        <visual name="slope404">
+        <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh><uri>model://simple_slope/meshes/slope.obj</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+    <link name="linkS504">
+      <pose> 2.0 1.25 -0.005 0.0 0.0 3.1416 </pose>
+      <static>true</static>
+        <visual name="slope504">
+        <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh><uri>model://simple_slope/meshes/slope.obj</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+    <link name="linkS604">
+      <pose> 8.0 -1.75 -0.005 0.0 0.0 0.0 </pose>
+      <static>true</static>
+        <visual name="slope604">
+        <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh><uri>model://simple_slope/meshes/slope.obj</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+    <link name="linkS704">
+      <pose> 8.0 -1.75 -0.005 0.0 0.0 3.1416 </pose>
+      <static>true</static>
+        <visual name="slope704">
+        <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh><uri>model://simple_slope/meshes/slope.obj</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+    <link name="linkS804">
+      <pose> 2.0 -1.75 -0.005 0.0 0.0 0.0 </pose>
+      <static>true</static>
+        <visual name="slope804">
+        <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh><uri>model://simple_slope/meshes/slope.obj</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+    <link name="linkS904">
+      <pose> 2.0 -1.75 -0.005 0.0 0.0 3.1416 </pose>
+      <static>true</static>
+        <visual name="slope904">
+        <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh><uri>model://simple_slope/meshes/slope.obj</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+    <link name="linkS1004">
+      <pose> 8.0 -4.75 -0.005 0.0 0.0 0.0 </pose>
+      <static>true</static>
+        <visual name="slope1004">
+        <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh><uri>model://simple_slope/meshes/slope.obj</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+    <link name="linkS1104">
+      <pose> 8.0 -4.75 -0.005 0.0 0.0 3.1416 </pose>
+      <static>true</static>
+        <visual name="slope1104">
+        <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh><uri>model://simple_slope/meshes/slope.obj</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+    <link name="linkS1204">
+      <pose> 2.0 -4.75 -0.005 0.0 0.0 0.0 </pose>
+      <static>true</static>
+        <visual name="slope1204">
+        <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh><uri>model://simple_slope/meshes/slope.obj</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+    <link name="linkS1304">
+      <pose> 2.0 -4.75 -0.005 0.0 0.0 3.1416 </pose>
+      <static>true</static>
+        <visual name="slope1304">
+        <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh><uri>model://simple_slope/meshes/slope.obj</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+    <link name="linkS1404">
+      <pose> 8.0 -7.75 -0.005 0.0 0.0 0.0 </pose>
+      <static>true</static>
+        <visual name="slope1404">
+        <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh><uri>model://simple_slope/meshes/slope.obj</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+    <link name="linkS1504">
+      <pose> 8.0 -7.75 -0.005 0.0 0.0 3.1416 </pose>
+      <static>true</static>
+        <visual name="slope1504">
+        <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh><uri>model://simple_slope/meshes/slope.obj</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+    <link name="linkS1604">
+      <pose> 2.0 -7.75 -0.005 0.0 0.0 0.0 </pose>
+      <static>true</static>
+        <visual name="slope1604">
+        <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh><uri>model://simple_slope/meshes/slope.obj</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+    <link name="linkS1704">
+      <pose> 2.0 -7.75 -0.005 0.0 0.0 3.1416 </pose>
+      <static>true</static>
+        <visual name="slope1704">
+        <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh><uri>model://simple_slope/meshes/slope.obj</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+    <link name="linkS1804">
+      <pose> 8.0 -10.8 -0.005 0.0 0.0 0.0 </pose>
+      <static>true</static>
+        <visual name="slope1804">
+        <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh><uri>model://simple_slope/meshes/slope.obj</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+    <link name="linkS1904">
+      <pose> 8.0 -10.8 -0.005 0.0 0.0 3.1416 </pose>
+      <static>true</static>
+        <visual name="slope1904">
+        <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh><uri>model://simple_slope/meshes/slope.obj</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+    <link name="linkS2004">
+      <pose> 2.0 -10.8 -0.005 0.0 0.0 0.0 </pose>
+      <static>true</static>
+        <visual name="slope2004">
+        <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh><uri>model://simple_slope/meshes/slope.obj</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+    <link name="linkS2104">
+      <pose> 2.0 -10.8 -0.005 0.0 0.0 3.1416 </pose>
+      <static>true</static>
+        <visual name="slope2104">
+        <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh><uri>model://simple_slope/meshes/slope.obj</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+    </model>
+</sdf>

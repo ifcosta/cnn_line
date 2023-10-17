@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<launch>
+    <!-- Desired linear velocity [0, 1.5]-->
+    <arg name="linear_velocity" default="0.4" />           
+    
+    <!-- Topic for receiving line information -->
+    <arg name="line_topic" default="/line/x_theta" />      
+    
+    <!-- Odometry topic -->
+    <arg name="odom_topic" default="/mobile_base_controller/odom" /> 
+    
+    <!-- Velocity controller type (row control or cascade)-->
+    <arg name="controller" default="row_control" />        
+    
+    <!-- Output velocity topic -->
+    <arg name="output_topic" default="/mobile_base_controller/cmd_vel" /> 
+    
+
+    <!-- Set Parameters -->
+    <param name="linear_velocity" value="$(arg linear_velocity)" />
+    <param name="velocity_controller" value="$(arg controller)" />
+
+    <!-- Start the line_controller_node -->
+    <node name="line_controller_node" pkg="cnn_line" type="line_controller.py" output="screen" 
+        args="
+        --line_topic $(arg line_topic)
+        --odom_topic $(arg odom_topic)
+        --output_topic $(arg output_topic)">
+    </node>
+
+</launch>

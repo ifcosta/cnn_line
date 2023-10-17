@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<launch>
+    <arg name="linear_velocity" default="0.5" />
+
+    <arg name="autonomous_mode" default="False"/>
+    <arg name="publish_frequency" default="50" />
+    <arg name="output_topic" default="/mobile_base_controller/cmd_vel" />
+
+    <param name="linear_velocity" value="$(arg linear_velocity)" />
+
+    <!-- Start the line_controller_node -->
+    <node name="joy_controller_node" pkg="cnn_line" type="joystick_op.py" output="screen" 
+        args="
+        --publish_frequency $(arg publish_frequency)
+        --output_topic $(arg output_topic)">
+    </node>
+
+</launch>

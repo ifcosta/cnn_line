@@ -1,0 +1,622 @@
+<?xml version="1.0"?>
+<robot name="soybot">
+
+  <material name="blue">
+    <color rgba="0 0 0.8 1"/>
+  </material>
+  <material name="red">
+    <color rgba="0.8 0 0 1"/>
+  </material>
+  <material name="black">
+    <color rgba="0 0 0 1"/>
+  </material>
+  <material name="green">
+    <color rgba="0 0.9 0 1"/>
+  </material>
+  <material name="white">
+    <color rgba="1 1 1 1"/>
+  </material>
+
+
+
+  <link name="base_link">
+    <visual>
+      <geometry>
+        <box size="0.01 0.01 0.01"/>
+      </geometry>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <material name="red"/>
+    </visual>
+  </link>
+
+
+
+  <link name="visual_link">
+    <visual>
+      <geometry>
+        <box size="0.8 1.1 0.1"/>
+      </geometry>
+      <material name="white"/>
+    </visual>
+    <inertial>
+            <mass value="1" />
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <!-- sphere = 2/5MR² diagonal-->
+            <inertia ixx="0.01" ixy="0.0" ixz="0" iyy="0.01" iyz="0" izz="0.01" />
+    </inertial>
+  </link>
+  <joint name="visual_link_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="visual_link"/>
+    <origin rpy="0 0 0" xyz="-0.3 0.0 1.0"/>
+  </joint>
+
+
+  
+  <link name="f_right_wheel_link">
+    <visual>
+      <geometry>
+        <cylinder length="0.07" radius="0.200"/>
+      </geometry>
+      <origin rpy="1.57075 0 0" xyz="0 0 0"/>
+      <material name="black"/>
+    </visual>
+    <collision>
+      <geometry>
+        <cylinder length="0.07" radius="0.20"/>
+      </geometry>
+      <origin rpy="1.57075 0 0" xyz="0 0 0"/>
+    </collision>
+    <inertial>
+            <mass value="10" />
+            <origin rpy="1.57075 0 0" xyz="0 0 0"/>
+            <!-- Cylinder: ixx=iyy=1/12Mh²+1/4MR² izz = 1/2MR² -->
+            <inertia ixx="0.01" ixy="0.0" ixz="0" iyy="0.01" iyz="0" izz="0.01" />
+    </inertial>
+  </link>
+  
+  <joint name="f_right_wheel" type="continuous">
+    <parent link="fr_whl_sup_link"/>
+    <child link="f_right_wheel_link"/>
+    <axis xyz="0 1 0"/>
+    <origin xyz="0 0.05 -0.1"/>
+  </joint>
+  
+  <link name="f_left_wheel_link">
+    <visual>
+      <geometry>
+        <cylinder length="0.07" radius="0.200"/>
+      </geometry>
+      <origin rpy="1.57075 0 0" xyz="0 0 0"/>
+      <material name="black"/>
+    </visual>
+    <collision>
+      <geometry>
+        <cylinder length="0.07" radius="0.20"/>
+      </geometry>
+      <origin rpy="1.57075 0 0" xyz="0 0 0"/>
+    </collision>
+    <inertial>
+            <mass value="10" />
+            <origin rpy="1.57075 0 0" xyz="0 0 0"/>
+            <!-- Cylinder: ixx=iyy=1/12Mh²+1/4MR² izz = 1/2MR² -->
+            <inertia ixx="0.01" ixy="0.0" ixz="0" iyy="0.01" iyz="0" izz="0.01" />
+    </inertial>
+  </link>
+  
+  <joint name="f_left_wheel" type="continuous">
+    <parent link="fl_whl_sup_link"/>
+    <child link="f_left_wheel_link"/>
+    <axis xyz="0 1 0"/>
+    <origin xyz="0 -0.05 -0.1"/>
+  </joint>
+
+
+  <link name="b_right_wheel_link">
+    <visual>
+      <geometry>
+        <cylinder length="0.07" radius="0.200"/>
+      </geometry>
+      <origin rpy="1.57075 0 0" xyz="0 0 0"/>
+      <material name="black"/>
+    </visual>
+    <collision>
+      <geometry>
+        <cylinder length="0.07" radius="0.20"/>
+      </geometry>
+      <origin rpy="1.57075 0 0" xyz="0 0 0"/>
+    </collision>
+    <inertial>
+            <mass value="10" />
+            <origin rpy="1.57075 0 0" xyz="0 0 0"/>
+            <!-- Cylinder: ixx=iyy=1/12Mh²+1/4MR² izz = 1/2MR² -->
+            <inertia ixx="0.01" ixy="0.0" ixz="0" iyy="0.01" iyz="0" izz="0.01" />
+    </inertial>
+  </link>
+  <joint name="b_right_wheel" type="fixed">
+    <parent link="br_whl_sup_link"/>
+    <child link="b_right_wheel_link"/>
+    <axis xyz="0 1 0"/>
+    <origin xyz="0 0.05 -0.1"/>
+  </joint>
+  
+  
+  <link name="b_left_wheel_link">
+    <visual>
+      <geometry>
+        <cylinder length="0.07" radius="0.200"/>
+      </geometry>
+      <origin rpy="1.57075 0 0" xyz="0 0 0"/>
+      <material name="black"/>
+    </visual>
+    <collision>
+      <geometry>
+        <cylinder length="0.07" radius="0.20"/>
+      </geometry>
+      <origin rpy="1.57075 0 0" xyz="0 0 0"/>
+    </collision>
+    <inertial>
+            <mass value="10" />
+            <origin rpy="1.57075 0 0" xyz="0 0 0"/>
+            <!-- Cylinder: ixx=iyy=1/12Mh²+1/4MR² izz = 1/2MR² -->
+            <inertia ixx="0.01" ixy="0.0" ixz="0" iyy="0.01" iyz="0" izz="0.01" />
+    </inertial>
+  </link>
+  <joint name="b_left_wheel" type="fixed">
+    <parent link="bl_whl_sup_link"/>
+    <child link="b_left_wheel_link"/>
+    <axis xyz="0 1 0"/>
+    <origin xyz="0 -0.05 -0.1"/>
+  </joint>
+
+
+  
+  <link name="servo_link">
+    <visual>
+      <geometry>
+        <box size="0.02 1.80 0.005"/>
+      </geometry>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <material name="red"/>
+    </visual>
+    <inertial>
+            <mass value="0.25" />
+            <origin xyz="0 0 0" rpy="0 0 0.005" />
+            <inertia ixx="0.01" ixy="0.0" ixz="0" iyy="0.01" iyz="0" izz="0.01" />
+    </inertial>
+  </link>
+  
+  <joint name="servo" type="fixed">
+    <axis xyz="0 -1 0"/>
+    <limit effort="1000.0" lower="-1.57075" upper="1.57075" velocity="0.5"/>
+    <parent link="base_link"/>
+    <child link="servo_link"/>
+    <origin rpy="1.57075 3.1415 1.57075" xyz="0.1 0 0.95"/>
+  </joint>
+  
+  <joint name="camera_fixed" type="fixed">
+    <parent link="servo_link"/>
+    <child link="camera_link"/>
+    <origin rpy="-1.18 0 0" xyz="0 -0.91 0.02"/>
+  </joint>
+  
+  <joint name="camera_fixed2" type="fixed">
+    <parent link="servo_link"/>
+    <child link="camera_link2"/>
+    <origin rpy=" 0.1 0 0" xyz="0 0.88 0.01"/>
+  </joint>
+  
+  <link name="camera_link">
+  <visual>
+      <geometry>
+        <box size="0.03 0.06 0.005"/>
+      </geometry>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <material name="blue"/>
+    </visual>
+  </link>
+  
+  <link name="camera_link2">
+  <visual>
+      <geometry>
+        <box size="0.03 0.06 0.005"/>
+      </geometry>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <material name="green"/>
+    </visual>
+  </link>
+
+
+  
+  <link name="fr_leg_link">
+    <visual>
+      <geometry>
+        <box size="0.200 0.100 0.6"/>
+      </geometry>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <material name="blue"/>
+    </visual>
+    <inertial>
+            <mass value="10" />
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <!-- sphere = 2/5MR² diagonal-->
+            <inertia ixx="0.01" ixy="0.0" ixz="0" iyy="0.01" iyz="0" izz="0.01" />
+    </inertial>
+  </link>
+  <joint name="fr_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="fr_leg_link"/>
+    <origin rpy="0 0 0" xyz="-0.001 -0.499 0.7"/>
+  </joint>
+
+
+  
+  <link name="fl_leg_link">
+    <visual>
+      <geometry>
+        <box size="0.200 0.100 0.6"/>
+      </geometry>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <material name="blue"/>
+    </visual>
+    <inertial>
+            <mass value="10" />
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <!-- sphere = 2/5MR² diagonal-->
+            <inertia ixx="0.01" ixy="0.0" ixz="0" iyy="0.01" iyz="0.0" izz="0.01" />
+    </inertial>
+  </link>
+  <joint name="fl_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="fl_leg_link"/>
+    <origin rpy="0 0 0" xyz="-0.001 0.499 0.7"/>
+  </joint>
+
+
+
+  <link name="br_leg_link">
+    <visual>
+      <geometry>
+        <box size="0.200 0.100 0.6"/>
+      </geometry>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <material name="blue"/>
+    </visual>
+    <collision>
+      <geometry>
+        <box size="0.200 0.100 1"/>
+      </geometry>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+    </collision>
+    <inertial>
+            <mass value="10" />
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <!-- sphere = 2/5MR² diagonal-->
+            <inertia ixx="0.01" ixy="0.0" ixz="0.0" iyy="0.01" iyz="0.0" izz="0.01" />
+    </inertial>
+  </link>
+  <joint name="br_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="br_leg_link"/>
+    <origin rpy="0 0.3 0" xyz="-0.69 -0.499 0.7"/>
+  </joint>
+
+
+
+  <link name="bl_leg_link">
+    <visual>
+      <geometry>
+        <box size="0.200 0.100 0.6"/>
+      </geometry>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <material name="blue"/>
+    </visual>
+    <collision>
+      <geometry>
+        <box size="0.200 0.100 1"/>
+      </geometry>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+    </collision>
+    <inertial>
+            <mass value="10" />
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <!-- sphere = 2/5MR² diagonal-->
+            <inertia ixx="0.01" ixy="0.0" ixz="0" iyy="0.01" iyz="0" izz="0.01" />
+    </inertial>
+  </link>
+  <joint name="bl_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="bl_leg_link"/>
+    <origin rpy="0 0.3 0" xyz="-0.69 0.499 0.7"/>
+  </joint>
+
+
+
+  <link name="fr_whl_sup_link">
+    <visual>
+      <geometry>
+        <box size="0.100 0.01 0.3"/>
+      </geometry>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <material name="red"/>
+    </visual>
+    <inertial>
+            <mass value="2" />
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <!-- sphere = 2/5MR² diagonal-->
+            <inertia ixx="0.01" ixy="0.0" ixz="0" iyy="0.01" iyz="0" izz="0.01" />
+    </inertial>
+  </link>
+  <joint name="fr_whl_sup_joint" type="fixed">
+    <parent link="fr_leg_link"/>
+    <child link="fr_whl_sup_link"/>
+    <origin rpy="0 0 0" xyz=" 0 -0.0449 -0.43"/>
+  </joint>
+
+
+
+  <link name="fl_whl_sup_link">
+    <visual>
+      <geometry>
+        <box size="0.100 0.01 0.3"/>
+      </geometry>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <material name="red"/>
+    </visual>
+    <inertial>
+            <mass value="2" />
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <!-- sphere = 2/5MR² diagonal-->
+            <inertia ixx="0.01" ixy="0.0" ixz="0" iyy="0.01" iyz="0" izz="0.01" />
+    </inertial>
+  </link>
+  <joint name="fl_whl_sup_joint" type="fixed">
+    <parent link="fl_leg_link"/>
+    <child link="fl_whl_sup_link"/>
+    <origin rpy="0 0 0" xyz=" 0 0.0449 -0.43"/>
+  </joint>
+
+
+  <link name="br_whl_sup_link">
+    <visual>
+      <geometry>
+        <box size="0.100 0.01 0.3"/>
+      </geometry>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <material name="red"/>
+    </visual>
+    <inertial>
+            <mass value="2" />
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <!-- sphere = 2/5MR² diagonal-->
+            <inertia ixx="0.01" ixy="0.0" ixz="0" iyy="0.01" iyz="0" izz="0.01" />
+    </inertial>
+  </link>
+  <joint name="br_whl_sup_joint" type="fixed">
+    <parent link="br_leg_link"/>
+    <child link="br_whl_sup_link"/>
+	<axis xyz="0 0 1"/>
+    <origin rpy="0 0 0" xyz=" 0 -0.045 -0.45"/>
+  </joint>
+  
+  
+  <link name="bl_whl_sup_link">
+    <visual>
+      <geometry>
+        <box size="0.100 0.01 0.3"/>
+      </geometry>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <material name="red"/>
+    </visual>
+    <inertial>
+            <mass value="2" />
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <!-- sphere = 2/5MR² diagonal-->
+            <inertia ixx="0.01" ixy="0.0" ixz="0" iyy="0.01" iyz="0" izz="0.01" />
+    </inertial>
+  </link>
+  <joint name="bl_whl_sup_joint" type="fixed">
+    <parent link="bl_leg_link"/>
+    <child link="bl_whl_sup_link"/>
+	<axis xyz="0 0 1"/>
+    <origin rpy="0 0 0" xyz=" 0 0.045 -0.45"/>
+  </joint>
+
+
+  <!-- Transmission-->
+  <transmission name="rwheel_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <actuator name="$rwheel_motor">
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+    <joint name="f_right_wheel">
+      <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+    </joint>
+  </transmission>
+  
+  <transmission name="lwheel_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <actuator name="$lwheel_motor">
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+    <joint name="f_left_wheel">
+      <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+    </joint>
+  </transmission>
+
+  
+  <!-- Gazebo plugin-->
+  <gazebo>
+    <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
+      <robotNamespace></robotNamespace>
+      <frameId>base_link</frameId>
+      <legacyModeNS>false</legacyModeNS>
+      <updateRate>50</updateRate>
+    </plugin>
+  </gazebo>
+  
+  <gazebo reference="base_link">
+    <material>Gazebo/Red</material>
+  </gazebo>
+
+
+  <gazebo reference="fl_leg_link">
+    <material>Gazebo/Blue</material>
+  </gazebo>
+
+  <gazebo reference="fr_leg_link">
+    <material>Gazebo/Blue</material>
+  </gazebo>
+  
+  <gazebo reference="bl_leg_link">
+    <material>Gazebo/Blue</material>
+  </gazebo>
+  
+  <gazebo reference="br_leg_link">
+    <material>Gazebo/Blue</material>
+  </gazebo>
+
+
+  <gazebo reference="fl_whl_sup_link">
+    <material>Gazebo/Red</material>
+  </gazebo>
+
+  <gazebo reference="fr_whl_sup_link">
+    <material>Gazebo/Red</material>
+  </gazebo>
+  
+  <gazebo reference="bl_whl_sup_link">
+    <material>Gazebo/Red</material>
+  </gazebo>
+
+  <gazebo reference="br_whl_sup_link">
+    <material>Gazebo/Red</material>
+  </gazebo>
+  
+  <gazebo reference="visual_link">
+    <material>Gazebo/White</material>
+  </gazebo>
+
+
+  <gazebo reference="f_left_wheel_link">
+    <material>Gazebo/Grey</material>
+    <mu1>1.16</mu1>
+    <mu2>1.16</mu2>
+  </gazebo>
+  
+  <gazebo reference="f_right_wheel_link">
+    <material>Gazebo/Grey</material>
+    <mu1>1.16</mu1>
+    <mu2>1.16</mu2>
+  </gazebo>
+
+
+  <gazebo reference="b_left_wheel_link">
+    <material>Gazebo/Grey</material>
+    <mu1>0</mu1>
+    <mu2>0</mu2>
+  </gazebo>
+  
+  <gazebo reference="b_right_wheel_link">
+    <material>Gazebo/Grey</material>
+    <mu1>0</mu1>
+    <mu2>0</mu2>
+  </gazebo>
+  
+
+  <gazebo reference="camera_link">
+    <material>Gazebo/Blue</material>
+  </gazebo>
+  
+  <gazebo reference="camera_link2">
+    <material>Gazebo/Green</material>
+  </gazebo>
+  
+  <gazebo reference="servo_link">
+    <material>Gazebo/Red</material>
+  </gazebo>
+  
+    <!-- camera -->
+  <gazebo reference="camera_link">
+    <sensor type="camera" name="camera1">
+      <update_rate>30.0</update_rate>
+      <camera name="head">
+        <pose >0 0 0 1.57075 -1.57075 0 </pose>
+        <horizontal_fov>0.72</horizontal_fov>
+        <image>
+          <width>640</width>
+          <height>480</height>
+          <format>R8G8B8</format>
+        </image>
+        <clip>
+          <near>0.02</near>
+          <far>300</far>
+        </clip>
+        <noise>
+          <type>gaussian</type>
+          <!-- Noise is sampled independently per pixel on each frame.
+               That pixel's noise value is added to each of its color
+               channels, which at that point lie in the range [0,1]. -->
+          <mean>0.0</mean>
+          <stddev>0.007</stddev>
+        </noise>
+      </camera>
+      <plugin name="camera_controller" filename="libgazebo_ros_camera.so">
+      	<!--robotNamespace></robotNamespace-->
+        <alwaysOn>true</alwaysOn>
+        <updateRate>30.0</updateRate>
+        <cameraName>nav_front</cameraName>
+        <imageTopicName>image_raw</imageTopicName>
+        <cameraInfoTopicName>camera_info</cameraInfoTopicName>
+        <frameName>camera_link</frameName>
+        <hackBaseline>0.0</hackBaseline>
+      </plugin>
+    </sensor>
+  </gazebo>
+  
+  <!-- camera2 -->
+  <gazebo reference="camera_link2">
+    <sensor type="camera" name="camera1">
+      <update_rate>30.0</update_rate>
+      <camera name="head">
+        <pose >0 0 0 1.57075 -1.57075 0 </pose>
+        <horizontal_fov>0.80</horizontal_fov>
+        <image>
+          <width>640</width>
+          <height>480</height>
+          <format>R8G8B8</format>
+        </image>
+        <clip>
+          <near>0.02</near>
+          <far>100</far>
+        </clip>
+        <!--distortion>
+            <k1>-0.25</k1>
+            <k2>0.12</k2>
+            <k3>0.0</k3>
+            <p1>-0.00028</p1>
+            <p2>-0.00005</p2>
+            <center>0.5 0.5</center>
+          </distortion-->
+        <noise>
+          <type>gaussian</type>
+          <!-- Noise is sampled independently per pixel on each frame.
+               That pixel's noise value is added to each of its color
+               channels, which at that point lie in the range [0,1]. -->
+          <mean>0.0</mean>
+          <stddev>0.007</stddev>
+        </noise>
+      </camera>
+      <plugin name="camera_controller2" filename="libgazebo_ros_camera.so">
+      	<!--robotNamespace></robotNamespace-->
+        <alwaysOn>true</alwaysOn>
+        <updateRate>30.0</updateRate>
+        <cameraName>soybot/left_camera1</cameraName>
+        <imageTopicName>image_raw</imageTopicName>
+        <cameraInfoTopicName>camera_info2</cameraInfoTopicName>
+        <frameName>camera_link2</frameName>
+        <hackBaseline>0.0</hackBaseline>
+      </plugin>
+    </sensor>
+  </gazebo>  
+</robot>

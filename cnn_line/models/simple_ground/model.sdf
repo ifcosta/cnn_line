@@ -1,0 +1,36 @@
+<?xml version='1.0' ?>
+<sdf version='1.6'>
+    <model name='simple_ground'>
+    <static>true</static>
+      <link name="linkG0">
+      <pose>5 0 0.01  3.1410592654 0 0</pose>
+      <static>true</static>
+        <visual name="ground0">
+        <cast_shadows>0</cast_shadows>
+          <geometry>
+            <mesh><uri>model://simple_ground/meshes/ground.obj</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+      <link name="linkG1">
+      <pose>5 -7.4 0.01  3.1410592654 0 0</pose>
+      <static>true</static>
+        <visual name="ground1">
+        <cast_shadows>0</cast_shadows>
+          <geometry>
+            <mesh><uri>model://simple_ground/meshes/ground.obj</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+      <link name="linkG2">
+      <pose>5 -13.8 0.01  3.141592654 0 0</pose>
+      <static>true</static>
+        <visual name="ground2">
+        <cast_shadows>0</cast_shadows>
+          <geometry>
+            <mesh><uri>model://simple_ground/meshes/ground.obj</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+    </model>
+</sdf>
