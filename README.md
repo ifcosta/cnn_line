@@ -46,7 +46,7 @@ Refer to the code for further informations
 ### Preparing the Data
 Training Folder (inside cnn_line): The training folder contains scripts and tools to create the dataset. The notebook for training the model is also inside it.
 
-To use place the dataset in the following structure:
+Place the dataset in the following structure:
 ```
 cnn_line
     ├── training
