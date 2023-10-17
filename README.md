@@ -33,10 +33,10 @@ Be cautious about potential button conflicts.
 ## Button Layout
 Start and Select Buttons (Start + Select): Toggles autonomous mode when both buttons are pressed together. The status of the autonomous mode is logged.
 
-A Button: Initiates the home steering process when pressed. (Note: This feature is deactivated. Thorvald platform only)
-L Button: Decreases the speed gain by 0.1 when pressed. Updates the ROS parameter /linear_velocity with the new speed gain.
-R Button: Increases the speed gain by 0.1 when pressed. Updates the ROS parameter /linear_velocity with the new speed gain.
-(A + B): Toggles between control types ('cascade' and 'row_control') when both buttons are pressed simultaneously. It updates the parameter server with the new control type.
+- A Button: Initiates the home steering process when pressed. (Note: This feature is deactivated. Thorvald platform only)
+- L Button: Decreases the speed gain by 0.1 when pressed. Updates the ROS parameter /linear_velocity with the new speed gain.
+- R Button: Increases the speed gain by 0.1 when pressed. Updates the ROS parameter /linear_velocity with the new speed gain.
+- (A + B): Toggles between control types ('cascade' and 'row_control') when both buttons are pressed simultaneously. It updates the parameter server with the new control type.
 
 Left Analog Stick: Control the robot, forward/backward, and turn right/left.
 
