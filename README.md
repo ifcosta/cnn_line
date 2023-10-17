@@ -47,18 +47,15 @@ Refer to the code for further informations
 Training Folder (inside cnn_line): The training folder contains scripts and tools to create the dataset. The notebook for training the model is also inside it.
 
 To use place the dataset in the following structure:
-|cnn_line_train.ipynb
-|label.py
-
-|*dataset_folder*
-||*test*
-|||*images*
-
-||*train*
-|||*images*
-
-||*val*
-|||*images*
+| cnn_line_train.ipynb
+| label.py
+| *dataset_folder*
+|  || *test*
+|  ||| *images*
+|  || *train*
+|  ||| *images*
+|  || *val*
+|  ||| *images*
 
 run label.py to initiate the labeling script
 
